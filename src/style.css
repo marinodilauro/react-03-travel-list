@@ -1,20 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+/* Color palette */
+:root {
+  --color-primary: #ffecd1;
+  --color-secondary: #ff7d00;
+  --color-tertiary: #78290f;
+  --color-dark: #15616d;
+  --color-darker: #001524;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .logo {
   font-family: "Righteous", sans-serif;
   font-weight: 400;
-  font-style: normal;
   text-transform: uppercase;
   font-size: 2rem;
   display: flex;
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   img {
     width: 150px;
   }
+}
+
+.add-form {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  padding: 2.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.list {
+  background-color: var(--color-primary);
+  color: var(--color-darker);
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.stats {
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: 700;
+  padding: 3.2rem 0;
 }

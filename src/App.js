@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function App() {
   return (
-    <div>
+    <div className="app">
       <Logo />
       <Form />
       <PackingList />
@@ -27,7 +27,7 @@ function Logo() {
 // Form component
 function Form() {
   return (
-    <div>
+    <div className="add-form">
       <h3>What do you need for your trip?</h3>
     </div>
   );
@@ -36,14 +36,14 @@ function Form() {
 // List component
 function PackingList() {
   return (
-    <div> LIST </div>
+    <div className="list"> LIST </div>
   );
 }
 
 // Stats component
 function Stats() {
   return (
-    <footer> <em>You have X items in your list, and you already packed X (X%).</em></footer>
+    <footer className="stats"> <em>You have X items in your list, and you already packed X (X%).</em></footer>
   );
 }
 
