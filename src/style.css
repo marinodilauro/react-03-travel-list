@@ -47,6 +47,38 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+
+  button,
+  select,
+  input {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    font-family: inherit;
+    border: none;
+    border-radius: 10rem;
+    padding: 0.25rem 1.2rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2378290f' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 50%;
+    padding-right: 2.5rem; /* Aumenta il padding destro per fare spazio alla freccia */
+  }
+
+  button {
+    text-transform: uppercase;
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    padding: 0.25rem 2.2rem;
+  }
 }
 
 .list {
@@ -72,13 +104,11 @@ body {
       font-weight: 600;
       display: flex;
       align-items: center;
-      gap: 1.2rem;
-
       button {
         cursor: pointer;
         background: none;
         border: none;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding: 0.8rem;
         transform: translateY(2px);
       }
