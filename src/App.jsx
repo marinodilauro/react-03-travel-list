@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "./components/Logo.jsx";
 import Form from "./components/Form.jsx";
 import PackingList from "./components/PackingList.jsx";
 import Stats from "./components/Stats.jsx";
 
 export default function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    // Recupera gli elementi dal localStorage all'inizializzazione
+    const savedItems = localStorage.getItem("packingList");
+    return savedItems ? JSON.parse(savedItems) : [];
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Salva gli elementi nel localStorage ogni volta che cambiano
+  useEffect(() => {
+    localStorage.setItem("packingList", JSON.stringify(items));
+  }, [items]);
 
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
@@ -31,12 +40,10 @@ export default function App() {
 
   function handleShowModal() {
     setIsModalOpen(true);
-    // console.log(isModalOpen);
   }
 
   function handleCloseModal() {
     setIsModalOpen(false);
-    // console.log(isModalOpen);
   }
 
   return (
