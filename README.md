@@ -1,5 +1,5 @@
 # Travel PackMate
-![Screenshot desktop di Travel Packmate](public/screenshot_desktop "Travel Packmate desktop demo") ![Screenshot mobile di Travel Packmate](public/screenshot_mobile "Travel Packmate mobile demo")
+![Screenshot desktop di Travel Packmate](public/screenshot_desktop.png "Travel Packmate desktop demo") ![Screenshot mobile di Travel Packmate](public/screenshot_mobile.jpg "Travel Packmate mobile demo")
 
 TravelPackMate è un'applicazione progettata per aiutare gli utenti a tenere traccia degli oggetti da mettere in valigia per un viaggio. L'app consente agli utenti di inserire elementi in una lista, contrassegnare gli elementi messi in valigia, eliminare elementi e ordinare la lista in vari modi.
 
