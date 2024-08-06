@@ -1,5 +1,5 @@
 # Travel PackMate
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
+<div style="display: flex; flex-direction: row; justify-content: space-between; gap:1rem;">
   <img src="public/screenshot_desktop.png" alt="Screenshot desktop di Travel Packmate" title="Travel Packmate desktop demo" style="width:75%" />
   <img src="public/screenshot_mobile.png" alt="Screenshot mobile di Travel Packmate" title="Travel Packmate mobile demo" style="width:20%"/>
 </div>
