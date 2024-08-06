@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Travel PackMate
+![Screenshot desktop di Travel Packmate](public/screenshot_desktop "Travel Packmate desktop demo") ![Screenshot mobile di Travel Packmate](public/screenshot_mobile "Travel Packmate mobile demo")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TravelPackMate è un'applicazione progettata per aiutare gli utenti a tenere traccia degli oggetti da mettere in valigia per un viaggio. L'app consente agli utenti di inserire elementi in una lista, contrassegnare gli elementi messi in valigia, eliminare elementi e ordinare la lista in vari modi.
 
-## Available Scripts
+## Funzionalità
 
-In the project directory, you can run:
+- Aggiungi elementi alla lista di imballaggio
+- Elimina elementi dalla lista
+- Segna gli elementi come inseriti/non inseriti in valigia
+- Ordina gli elementi per ordine di inserimento, ordine alfabetico o stato (inseriti in valigia o no)
+- Utilizzo del localStorage per salvare la lista di elementi
 
-### `npm start`
+## Tecnologie Utilizzate
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML
+- CSS
+- React
+- PWA
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sfide Affrontate
 
-### `npm test`
+Descrivi brevemente le sfide principali che hai affrontato durante lo sviluppo di questo esercizio e come le hai superate.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Cosa Ho Imparato
 
-### `npm run build`
+Elenca i principali concetti o tecniche che hai appreso realizzando questo progetto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Visualizzare il progetto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Si può visionare il progetto a questo indirizzo [https://travelpackmate.netlify.app/](https://travelpackmate.netlify.app/) da desktop, oppure installare la PWA tramite q1uesti passaggi una volta aperto il link su un dispositivo mobile:
+1. Tocca l'icona "Condividi" (il quadrato con la freccia verso l'alto) nella barra degli strumenti.
+2. Scorri verso il basso e tocca "Aggiungi alla schermata Home".
+3. Personalizza il nome dell'app se lo desideri.
+4. Tocca "Aggiungi" nell'angolo in alto a destra.
+5. L'icona della tua PWA apparirà sulla schermata Home del dispositivo.
