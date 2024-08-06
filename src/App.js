@@ -18,14 +18,19 @@ export default function App() {
   }
 
   function handleToggleItem(id) {
-    setItems(items => items.map(item => item.id === id ? { ...item, packed: !item.packed } : item))
+    setItems(items => items.map(item => item.id === id ? { ...item, packed: !item.packed } : item));
+  }
+
+  function handleClearList() {
+    const confirmed = window.confirm("Are you sure you wanna delete al items?\n⚠️ This is an irreversible action. ⚠️");
+    if (items.length > 0 && confirmed) setItems([]);
   }
 
   return (
     <div className="app">
       <Logo />
       <Form onAddItems={handleAddItems} />
-      <PackingList items={items} onDeleteItems={handleDeleteItems} onToggleItems={handleToggleItem} />
+      <PackingList items={items} onDeleteItems={handleDeleteItems} onToggleItems={handleToggleItem} onClearList={handleClearList} />
       <Stats items={items} />
     </div>
   );
@@ -84,7 +89,7 @@ function Form({ onAddItems }) {
 }
 
 // List component
-function PackingList({ items, onDeleteItems, onToggleItems }) {
+function PackingList({ items, onDeleteItems, onToggleItems, onClearList }) {
   const [sortBy, setSortBy] = useState("input");
   let sortedItems;
 
@@ -97,11 +102,14 @@ function PackingList({ items, onDeleteItems, onToggleItems }) {
 
       <div className="actions">
         <span>Sort by</span>
+
         <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
           <option value="input">input order</option>
           <option value="description">description</option>
           <option value="status">status</option>
         </select>
+
+        <button onClick={onClearList} disabled={!items.length}>Clear list</button>
       </div>
 
       <ul>
@@ -115,9 +123,9 @@ function PackingList({ items, onDeleteItems, onToggleItems }) {
 function Item({ item, onDeleteItems, onToggleItems }) {
   return (
     <li>
-      <label class="checkbox_container">
+      <label className="checkbox_container">
         <input type="checkbox" value={item.packed} onChange={() => onToggleItems(item.id)} />
-        <span class="checkmark"></span>
+        <span className="checkmark"></span>
       </label>
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>{item.quantity} {item.description}</span>
       <button onClick={() => onDeleteItems(item.id)} style={{ color: "red" }}>&times;</button>
