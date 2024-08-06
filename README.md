@@ -33,7 +33,7 @@ Elenca i principali concetti o tecniche che hai appreso realizzando questo proge
 
 ## Visualizzare il progetto
 
-Si può visionare il progetto a questo indirizzo [https://travelpackmate.netlify.app/](https://travelpackmate.netlify.app/) da desktop, oppure installare la PWA tramite q1uesti passaggi una volta aperto il link su un dispositivo mobile:
+Si può visionare il progetto a questo indirizzo [https://travelpackmate.netlify.app/](https://travelpackmate.netlify.app/) da desktop, oppure installare la PWA tramite questi passaggi una volta aperto il link su un dispositivo mobile:
 1. Tocca l'icona "Condividi" (il quadrato con la freccia verso l'alto) nella barra degli strumenti.
 2. Scorri verso il basso e tocca "Aggiungi alla schermata Home".
 3. Personalizza il nome dell'app se lo desideri.
