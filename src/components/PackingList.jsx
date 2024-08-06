@@ -1,11 +1,15 @@
 import { useState } from "react";
 import Item from "./Item.jsx";
+import Modal from "./Modal.jsx";
 
 // List component
 export default function PackingList({
   items,
   onDeleteItems,
   onToggleItems,
+  onShowModal,
+  onCloseModal,
+  isModalOpen,
   onClearList,
 }) {
   const [sortBy, setSortBy] = useState("input");
@@ -32,9 +36,15 @@ export default function PackingList({
           <option value="status">status</option>
         </select>
 
-        <button onClick={onClearList} disabled={!items.length}>
+        <button onClick={onShowModal} disabled={!items.length}>
           Clear list
         </button>
+
+        <Modal
+          isModalOpen={isModalOpen}
+          onCloseModal={onCloseModal}
+          onClearList={onClearList}
+        />
       </div>
 
       <ul>

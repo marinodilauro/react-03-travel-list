@@ -6,6 +6,7 @@ import Stats from "./components/Stats.jsx";
 
 export default function App() {
   const [items, setItems] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
@@ -24,10 +25,18 @@ export default function App() {
   }
 
   function handleClearList() {
-    const confirmed = window.confirm(
-      "Are you sure you wanna delete al items?\n⚠️ This is an irreversible action. ⚠️"
-    );
-    if (items.length > 0 && confirmed) setItems([]);
+    setItems([]);
+    setIsModalOpen(false);
+  }
+
+  function handleShowModal() {
+    setIsModalOpen(true);
+    // console.log(isModalOpen);
+  }
+
+  function handleCloseModal() {
+    setIsModalOpen(false);
+    // console.log(isModalOpen);
   }
 
   return (
@@ -39,6 +48,9 @@ export default function App() {
         onDeleteItems={handleDeleteItems}
         onToggleItems={handleToggleItem}
         onClearList={handleClearList}
+        onShowModal={handleShowModal}
+        onCloseModal={handleCloseModal}
+        isModalOpen={isModalOpen}
       />
       <Stats items={items} />
     </div>
